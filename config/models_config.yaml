@@ -1,0 +1,142 @@
+# ==============================================================================
+# Artifact Replication Package: Dynamic Architectural Guardrail (DAG)
+# Paper: Governed Autonomy: Halting Architectural Entropy in Agentic Software 
+#        Workflows via Dynamic Guardrails (SANER 2026)
+# Track: Agentic AI systems and autonomous software engineering workflows
+# 
+# Component: Foundation LLM Inference & Provider Configuration
+# Target Section: Section IV-C (Baselines & Foundation Model Setup) & RQ2 Tracking
+# 
+# Schema Version: 2.1.0-ae
+# Standards: Compliant with IEEE/ACM Artifact Evaluation Guidelines (Badges: Reusable)
+# Description: Manages model snapshots, deterministic sampling parameters, API retry
+#              backoffs, token accounting, and offline replay modes for reviewers.
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Global Active Model Pointer & Execution Mode
+# ------------------------------------------------------------------------------
+runtime_settings:
+  # The default model evaluated across all configurations (Base-Agent, Naive-Linter, DAG)
+  # Strictly aligned with Section IV-C: "all workflows are powered by the same foundation model"
+  active_provider: "openai"
+  active_model_id: "gpt-4o-pinned"
+
+  # ARTIFACT EVALUATION COMPLIANCE: Offline Replay Mode
+  # When set to true, the framework intercepts API calls and serves generation responses
+  # from pre-recorded deterministic traces in `logs_and_artifacts/execution_traces/`.
+  # This allows AE reviewers to fully reproduce all experimental results, tables, and 
+  # figures (Figures 3 & 4) without requiring active commercial API keys.
+  offline_replay_mode: false        # Set to 'true' for zero-cost reproduction by AE reviewers
+  trace_cache_dir: "logs_and_artifacts/execution_traces/"
+  record_new_traces: true           # When live API is used, persists raw request/response pairs
+
+# ------------------------------------------------------------------------------
+# 2. Strict Deterministic Sampling Parameters (Paper Section IV-C)
+# ------------------------------------------------------------------------------
+sampling_defaults:
+  # Temperature T=0.2 explicitly declared in Section IV-C to balance targeted code 
+  # generation with low probabilistic variance across repetitions.
+  temperature: 0.2                  # Strictly locked to 0.2 across all baseline and DAG runs
+  top_p: 0.95                       # Nucleus sampling boundary
+  seed: 42                          # Global random seed forwarded to supporting APIs (e.g., OpenAI seed param)
+  max_output_tokens: 2048           # Bounded patch generation length to prevent context flooding
+  frequency_penalty: 0.0            # No arbitrary frequency penalty; code requires repetition (e.g., variable names)
+  presence_penalty: 0.0             # Preserves natural code structure distributions
+  stop_sequences:                   # Prevents agents from hallucinating subsequent conversational turns
+    - "```\n\n"
+    - "--- END PATCH ---"
+    - "Observation:"
+
+# ------------------------------------------------------------------------------
+# 3. Model Provider Catalog & Snapshot Pinning
+# ------------------------------------------------------------------------------
+providers:
+
+  # ----------------------------------------------------------------------------
+  # Primary Provider: OpenAI (Default Baseline & DAG Backbone)
+  # ----------------------------------------------------------------------------
+  openai:
+    api_key_env_var: "OPENAI_API_KEY"
+    api_base_url: "https://api.openai.com/v1"
+    models:
+      # Pinned snapshot prevents silent performance drift caused by provider updates
+      gpt-4o-pinned:
+        model_name: "gpt-4o-2024-08-06"
+        context_window: 128000
+        supports_structured_outputs: true
+        token_cost_per_1k_input: 0.0025    # In USD; used for RQ2 Wasted Token Overhead accounting
+        token_cost_per_1k_output: 0.0100
+
+      # Secondary fallback snapshot for robustness validation
+      gpt-4o-mini-pinned:
+        model_name: "gpt-4o-mini-2024-07-18"
+        context_window: 128000
+        supports_structured_outputs: true
+        token_cost_per_1k_input: 0.00015
+        token_cost_per_1k_output: 0.00060
+
+  # ----------------------------------------------------------------------------
+  # Secondary Provider: Anthropic (Ablation & Model-Agnostic Validation)
+  # ----------------------------------------------------------------------------
+  anthropic:
+    api_key_env_var: "ANTHROPIC_API_KEY"
+    api_base_url: "https://api.anthropic.com/v1"
+    models:
+      claude-3-5-sonnet-pinned:
+        model_name: "claude-3-5-sonnet-20241022"
+        context_window: 200000
+        token_cost_per_1k_input: 0.0030
+        token_cost_per_1k_output: 0.0150
+
+  # ----------------------------------------------------------------------------
+  # Local / Open-Source Provider: vLLM or Ollama (Self-Hosted Reproducibility)
+  # ----------------------------------------------------------------------------
+  local_vllm:
+    api_key_env_var: "LOCAL_API_KEY" # Optional / dummy token
+    api_base_url: "http://localhost:8000/v1"
+    models:
+      qwen-2-5-coder-32b:
+        model_name: "Qwen/Qwen2.5-Coder-32B-Instruct"
+        context_window: 32768
+        token_cost_per_1k_input: 0.0000    # Zero marginal API cost
+        token_cost_per_1k_output: 0.0000
+
+# ------------------------------------------------------------------------------
+# 4. Multi-Agent Role-Specific Overrides (Section III & Algorithm 1)
+# ------------------------------------------------------------------------------
+# While the foundation model remains fixed, role-specific prompts and operational 
+# budgets are parameterized to capture multi-agent interactions cleanly.
+agent_roles:
+  
+  # Standard Coder Agent (Initial Patch Generation & Orthogonal Execution)
+  coder_agent:
+    temperature: 0.2
+    max_output_tokens: 2048
+    system_prompt_file: "config/prompts/coder_agent_system.txt"
+
+  # Nudged Remediation Agent (Receives P_nudge feedback on structural violations)
+  remediation_agent:
+    temperature: 0.1                # Slightly lower temperature to prioritize deterministic compliance
+    max_output_tokens: 2048
+    system_prompt_file: "config/prompts/remediation_agent_system.txt"
+    include_ast_diff_context: true  # Appends the local offending edge to context
+
+# ------------------------------------------------------------------------------
+# 5. Network Robustness & Transient Fault Handling
+# ------------------------------------------------------------------------------
+network_resilience:
+  request_timeout_seconds: 60       # Timeout per generation call
+  max_api_retries: 5                # Retries for HTTP 429 (Rate Limit) or 5xx server errors
+  retry_strategy: "exponential_backoff"
+  initial_retry_delay_seconds: 2.0
+  max_retry_delay_seconds: 32.0
+  circuit_breaker_error_threshold: 10 # Halts experiment if provider is systematically unreachable
+
+# ------------------------------------------------------------------------------
+# 6. Token Accounting & Budget Guardrails (RQ2 Metric Support)
+# ------------------------------------------------------------------------------
+token_accounting:
+  track_wasted_tokens: true         # Explicitly tracks tokens generated by non-culpable agents (Section IV-D)
+  log_token_metrics_csv: "logs_and_artifacts/token_usage_records.csv"
+  max_allowed_batch_cost_usd: 5.00  # Hard budget safety cap per concurrent task batch to avoid billing spikes

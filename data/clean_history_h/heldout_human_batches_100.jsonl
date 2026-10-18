@@ -1,0 +1,100 @@
+{"batch_id": "HUMAN_BATCH_001", "batch_size": 3, "commit_deltas": [0.336, 0.336, 0.336], "total_agtd_delta": 1.008, "tau_batch_reference": 4.0326}
+{"batch_id": "HUMAN_BATCH_002", "batch_size": 4, "commit_deltas": [0.4318, 0.4318, 0.4318, 0.4318], "total_agtd_delta": 1.7272, "tau_batch_reference": 5.0627}
+{"batch_id": "HUMAN_BATCH_003", "batch_size": 5, "commit_deltas": [0.5251, 0.5251, 0.5251, 0.5251, 0.5251], "total_agtd_delta": 2.6255, "tau_batch_reference": 6.0742}
+{"batch_id": "HUMAN_BATCH_004", "batch_size": 6, "commit_deltas": [0.6171, 0.6171, 0.6171, 0.6171, 0.6171, 0.6171], "total_agtd_delta": 3.7026, "tau_batch_reference": 7.0744}
+{"batch_id": "HUMAN_BATCH_005", "batch_size": 3, "commit_deltas": [0.8261, 0.8261, 0.8261], "total_agtd_delta": 2.4783, "tau_batch_reference": 4.0326}
+{"batch_id": "HUMAN_BATCH_006", "batch_size": 4, "commit_deltas": [0.8931, 0.8931, 0.8931, 0.8931], "total_agtd_delta": 3.5724, "tau_batch_reference": 5.0627}
+{"batch_id": "HUMAN_BATCH_007", "batch_size": 5, "commit_deltas": [0.968, 0.968, 0.968, 0.968, 0.968], "total_agtd_delta": 4.84, "tau_batch_reference": 6.0742}
+{"batch_id": "HUMAN_BATCH_008", "batch_size": 6, "commit_deltas": [1.0469, 1.0469, 1.0469, 1.0469, 1.0469, 1.0469], "total_agtd_delta": 6.2814, "tau_batch_reference": 7.0744}
+{"batch_id": "HUMAN_BATCH_009", "batch_size": 3, "commit_deltas": [0.402, 0.402, 0.402], "total_agtd_delta": 1.206, "tau_batch_reference": 4.0326}
+{"batch_id": "HUMAN_BATCH_010", "batch_size": 4, "commit_deltas": [0.4939, 0.4939, 0.4939, 0.4939], "total_agtd_delta": 1.9756, "tau_batch_reference": 5.0627}
+{"batch_id": "HUMAN_BATCH_011", "batch_size": 5, "commit_deltas": [0.5847, 0.5847, 0.5847, 0.5847, 0.5847], "total_agtd_delta": 2.9235, "tau_batch_reference": 6.0742}
+{"batch_id": "HUMAN_BATCH_012", "batch_size": 6, "commit_deltas": [0.675, 0.675, 0.675, 0.675, 0.675, 0.675], "total_agtd_delta": 4.05, "tau_batch_reference": 7.0744}
+{"batch_id": "HUMAN_BATCH_013", "batch_size": 3, "commit_deltas": [0.892, 0.892, 0.892], "total_agtd_delta": 2.676, "tau_batch_reference": 4.0326}
+{"batch_id": "HUMAN_BATCH_014", "batch_size": 4, "commit_deltas": [0.9553, 0.9553, 0.9553, 0.9553], "total_agtd_delta": 3.8212, "tau_batch_reference": 5.0627}
+{"batch_id": "HUMAN_BATCH_015", "batch_size": 5, "commit_deltas": [1.0276, 1.0276, 1.0276, 1.0276, 1.0276], "total_agtd_delta": 5.138, "tau_batch_reference": 6.0742}
+{"batch_id": "HUMAN_BATCH_016", "batch_size": 6, "commit_deltas": [0.303, 0.303, 0.303, 0.303, 0.303, 0.303], "total_agtd_delta": 1.818, "tau_batch_reference": 7.0744}
+{"batch_id": "HUMAN_BATCH_017", "batch_size": 3, "commit_deltas": [0.468, 0.468, 0.468], "total_agtd_delta": 1.404, "tau_batch_reference": 4.0326}
+{"batch_id": "HUMAN_BATCH_018", "batch_size": 4, "commit_deltas": [1.3257, 1.3257, 1.3257, 1.3257], "total_agtd_delta": 5.3028, "tau_batch_reference": 5.0627}
+{"batch_id": "HUMAN_BATCH_019", "batch_size": 5, "commit_deltas": [0.6444, 0.6444, 0.6444, 0.6444, 0.6444], "total_agtd_delta": 3.222, "tau_batch_reference": 6.0742}
+{"batch_id": "HUMAN_BATCH_020", "batch_size": 6, "commit_deltas": [0.7328, 0.7328, 0.7328, 0.7328, 0.7328, 0.7328], "total_agtd_delta": 4.3968, "tau_batch_reference": 7.0744}
+{"batch_id": "HUMAN_BATCH_021", "batch_size": 3, "commit_deltas": [0.958, 0.958, 0.958], "total_agtd_delta": 2.874, "tau_batch_reference": 4.0326}
+{"batch_id": "HUMAN_BATCH_022", "batch_size": 4, "commit_deltas": [1.0173, 1.0173, 1.0173, 1.0173], "total_agtd_delta": 4.0692, "tau_batch_reference": 5.0627}
+{"batch_id": "HUMAN_BATCH_023", "batch_size": 5, "commit_deltas": [1.0872, 1.0872, 1.0872, 1.0872, 1.0872], "total_agtd_delta": 5.436, "tau_batch_reference": 6.0742}
+{"batch_id": "HUMAN_BATCH_024", "batch_size": 6, "commit_deltas": [0.3609, 0.3609, 0.3609, 0.3609, 0.3609, 0.3609], "total_agtd_delta": 2.1654, "tau_batch_reference": 7.0744}
+{"batch_id": "HUMAN_BATCH_025", "batch_size": 3, "commit_deltas": [0.5339, 0.5339, 0.5339], "total_agtd_delta": 1.6017, "tau_batch_reference": 4.0326}
+{"batch_id": "HUMAN_BATCH_026", "batch_size": 4, "commit_deltas": [0.6181, 0.6181, 0.6181, 0.6181], "total_agtd_delta": 2.4724, "tau_batch_reference": 5.0627}
+{"batch_id": "HUMAN_BATCH_027", "batch_size": 5, "commit_deltas": [0.704, 0.704, 0.704, 0.704, 0.704], "total_agtd_delta": 3.52, "tau_batch_reference": 6.0742}
+{"batch_id": "HUMAN_BATCH_028", "batch_size": 6, "commit_deltas": [0.7907, 0.7907, 0.7907, 0.7907, 0.7907, 0.7907], "total_agtd_delta": 4.7442, "tau_batch_reference": 7.0744}
+{"batch_id": "HUMAN_BATCH_029", "batch_size": 3, "commit_deltas": [1.0239, 1.0239, 1.0239], "total_agtd_delta": 3.0717, "tau_batch_reference": 4.0326}
+{"batch_id": "HUMAN_BATCH_030", "batch_size": 4, "commit_deltas": [1.0795, 1.0795, 1.0795, 1.0795], "total_agtd_delta": 4.318, "tau_batch_reference": 5.0627}
+{"batch_id": "HUMAN_BATCH_031", "batch_size": 5, "commit_deltas": [0.3207, 0.3207, 0.3207, 0.3207, 0.3207], "total_agtd_delta": 1.6035, "tau_batch_reference": 6.0742}
+{"batch_id": "HUMAN_BATCH_032", "batch_size": 6, "commit_deltas": [0.4188, 0.4188, 0.4188, 0.4188, 0.4188, 0.4188], "total_agtd_delta": 2.5128, "tau_batch_reference": 7.0744}
+{"batch_id": "HUMAN_BATCH_033", "batch_size": 3, "commit_deltas": [0.5999, 0.5999, 0.5999], "total_agtd_delta": 1.7997, "tau_batch_reference": 4.0326}
+{"batch_id": "HUMAN_BATCH_034", "batch_size": 4, "commit_deltas": [0.6802, 0.6802, 0.6802, 0.6802], "total_agtd_delta": 2.7208, "tau_batch_reference": 5.0627}
+{"batch_id": "HUMAN_BATCH_035", "batch_size": 5, "commit_deltas": [0.7636, 0.7636, 0.7636, 0.7636, 0.7636], "total_agtd_delta": 3.818, "tau_batch_reference": 6.0742}
+{"batch_id": "HUMAN_BATCH_036", "batch_size": 6, "commit_deltas": [0.8486, 0.8486, 0.8486, 0.8486, 0.8486, 0.8486], "total_agtd_delta": 5.0916, "tau_batch_reference": 7.0744}
+{"batch_id": "HUMAN_BATCH_037", "batch_size": 3, "commit_deltas": [1.0899, 1.0899, 1.0899], "total_agtd_delta": 3.2697, "tau_batch_reference": 4.0326}
+{"batch_id": "HUMAN_BATCH_038", "batch_size": 4, "commit_deltas": [1.1416, 1.1416, 1.1416, 1.1416], "total_agtd_delta": 4.5664, "tau_batch_reference": 5.0627}
+{"batch_id": "HUMAN_BATCH_039", "batch_size": 5, "commit_deltas": [1.2628, 1.2628, 1.2628, 1.2628, 1.2628], "total_agtd_delta": 6.314, "tau_batch_reference": 6.0742}
+{"batch_id": "HUMAN_BATCH_040", "batch_size": 6, "commit_deltas": [0.4766, 0.4766, 0.4766, 0.4766, 0.4766, 0.4766], "total_agtd_delta": 2.8596, "tau_batch_reference": 7.0744}
+{"batch_id": "HUMAN_BATCH_041", "batch_size": 3, "commit_deltas": [0.6659, 0.6659, 0.6659], "total_agtd_delta": 1.9977, "tau_batch_reference": 4.0326}
+{"batch_id": "HUMAN_BATCH_042", "batch_size": 4, "commit_deltas": [0.7423, 0.7423, 0.7423, 0.7423], "total_agtd_delta": 2.9692, "tau_batch_reference": 5.0627}
+{"batch_id": "HUMAN_BATCH_043", "batch_size": 5, "commit_deltas": [0.8232, 0.8232, 0.8232, 0.8232, 0.8232], "total_agtd_delta": 4.116, "tau_batch_reference": 6.0742}
+{"batch_id": "HUMAN_BATCH_044", "batch_size": 6, "commit_deltas": [0.9064, 0.9064, 0.9064, 0.9064, 0.9064, 0.9064], "total_agtd_delta": 5.4384, "tau_batch_reference": 7.0744}
+{"batch_id": "HUMAN_BATCH_045", "batch_size": 3, "commit_deltas": [1.1559, 1.1559, 1.1559], "total_agtd_delta": 3.4677, "tau_batch_reference": 4.0326}
+{"batch_id": "HUMAN_BATCH_046", "batch_size": 4, "commit_deltas": [0.343, 0.343, 0.343, 0.343], "total_agtd_delta": 1.372, "tau_batch_reference": 5.0627}
+{"batch_id": "HUMAN_BATCH_047", "batch_size": 5, "commit_deltas": [0.44, 0.44, 0.44, 0.44, 0.44], "total_agtd_delta": 2.2, "tau_batch_reference": 6.0742}
+{"batch_id": "HUMAN_BATCH_048", "batch_size": 6, "commit_deltas": [0.5345, 0.5345, 0.5345, 0.5345, 0.5345, 0.5345], "total_agtd_delta": 3.207, "tau_batch_reference": 7.0744}
+{"batch_id": "HUMAN_BATCH_049", "batch_size": 3, "commit_deltas": [0.7318, 0.7318, 0.7318], "total_agtd_delta": 2.1954, "tau_batch_reference": 4.0326}
+{"batch_id": "HUMAN_BATCH_050", "batch_size": 4, "commit_deltas": [0.8044, 0.8044, 0.8044, 0.8044], "total_agtd_delta": 3.2176, "tau_batch_reference": 5.0627}
+{"batch_id": "HUMAN_BATCH_051", "batch_size": 5, "commit_deltas": [0.8828, 0.8828, 0.8828, 0.8828, 0.8828], "total_agtd_delta": 4.414, "tau_batch_reference": 6.0742}
+{"batch_id": "HUMAN_BATCH_052", "batch_size": 6, "commit_deltas": [0.9643, 0.9643, 0.9643, 0.9643, 0.9643, 0.9643], "total_agtd_delta": 5.7858, "tau_batch_reference": 7.0744}
+{"batch_id": "HUMAN_BATCH_053", "batch_size": 3, "commit_deltas": [1.2218, 1.2218, 1.2218], "total_agtd_delta": 3.6654, "tau_batch_reference": 4.0326}
+{"batch_id": "HUMAN_BATCH_054", "batch_size": 4, "commit_deltas": [0.4052, 0.4052, 0.4052, 0.4052], "total_agtd_delta": 1.6208, "tau_batch_reference": 5.0627}
+{"batch_id": "HUMAN_BATCH_055", "batch_size": 5, "commit_deltas": [0.4996, 0.4996, 0.4996, 0.4996, 0.4996], "total_agtd_delta": 2.498, "tau_batch_reference": 6.0742}
+{"batch_id": "HUMAN_BATCH_056", "batch_size": 6, "commit_deltas": [0.5923, 0.5923, 0.5923, 0.5923, 0.5923, 0.5923], "total_agtd_delta": 3.5538, "tau_batch_reference": 7.0744}
+{"batch_id": "HUMAN_BATCH_057", "batch_size": 3, "commit_deltas": [0.7978, 0.7978, 0.7978], "total_agtd_delta": 2.3934, "tau_batch_reference": 4.0326}
+{"batch_id": "HUMAN_BATCH_058", "batch_size": 4, "commit_deltas": [0.8665, 0.8665, 0.8665, 0.8665], "total_agtd_delta": 3.466, "tau_batch_reference": 5.0627}
+{"batch_id": "HUMAN_BATCH_059", "batch_size": 5, "commit_deltas": [0.9424, 0.9424, 0.9424, 0.9424, 0.9424], "total_agtd_delta": 4.712, "tau_batch_reference": 6.0742}
+{"batch_id": "HUMAN_BATCH_060", "batch_size": 6, "commit_deltas": [1.2191, 1.2191, 1.2191, 1.2191, 1.2191, 1.2191], "total_agtd_delta": 7.3146, "tau_batch_reference": 7.0744}
+{"batch_id": "HUMAN_BATCH_061", "batch_size": 3, "commit_deltas": [0.3737, 0.3737, 0.3737], "total_agtd_delta": 1.1211, "tau_batch_reference": 4.0326}
+{"batch_id": "HUMAN_BATCH_062", "batch_size": 4, "commit_deltas": [0.4672, 0.4672, 0.4672, 0.4672], "total_agtd_delta": 1.8688, "tau_batch_reference": 5.0627}
+{"batch_id": "HUMAN_BATCH_063", "batch_size": 5, "commit_deltas": [0.5592, 0.5592, 0.5592, 0.5592, 0.5592], "total_agtd_delta": 2.796, "tau_batch_reference": 6.0742}
+{"batch_id": "HUMAN_BATCH_064", "batch_size": 6, "commit_deltas": [0.6502, 0.6502, 0.6502, 0.6502, 0.6502, 0.6502], "total_agtd_delta": 3.9012, "tau_batch_reference": 7.0744}
+{"batch_id": "HUMAN_BATCH_065", "batch_size": 3, "commit_deltas": [0.8637, 0.8637, 0.8637], "total_agtd_delta": 2.5911, "tau_batch_reference": 4.0326}
+{"batch_id": "HUMAN_BATCH_066", "batch_size": 4, "commit_deltas": [0.9286, 0.9286, 0.9286, 0.9286], "total_agtd_delta": 3.7144, "tau_batch_reference": 5.0627}
+{"batch_id": "HUMAN_BATCH_067", "batch_size": 5, "commit_deltas": [1.0021, 1.0021, 1.0021, 1.0021, 1.0021], "total_agtd_delta": 5.0105, "tau_batch_reference": 6.0742}
+{"batch_id": "HUMAN_BATCH_068", "batch_size": 6, "commit_deltas": [1.08, 1.08, 1.08, 1.08, 1.08, 1.08], "total_agtd_delta": 6.48, "tau_batch_reference": 7.0744}
+{"batch_id": "HUMAN_BATCH_069", "batch_size": 3, "commit_deltas": [0.4397, 0.4397, 0.4397], "total_agtd_delta": 1.3191, "tau_batch_reference": 4.0326}
+{"batch_id": "HUMAN_BATCH_070", "batch_size": 4, "commit_deltas": [0.5293, 0.5293, 0.5293, 0.5293], "total_agtd_delta": 2.1172, "tau_batch_reference": 5.0627}
+{"batch_id": "HUMAN_BATCH_071", "batch_size": 5, "commit_deltas": [0.6188, 0.6188, 0.6188, 0.6188, 0.6188], "total_agtd_delta": 3.094, "tau_batch_reference": 6.0742}
+{"batch_id": "HUMAN_BATCH_072", "batch_size": 6, "commit_deltas": [0.7081, 0.7081, 0.7081, 0.7081, 0.7081, 0.7081], "total_agtd_delta": 4.2486, "tau_batch_reference": 7.0744}
+{"batch_id": "HUMAN_BATCH_073", "batch_size": 3, "commit_deltas": [0.9297, 0.9297, 0.9297], "total_agtd_delta": 2.7891, "tau_batch_reference": 4.0326}
+{"batch_id": "HUMAN_BATCH_074", "batch_size": 4, "commit_deltas": [0.9908, 0.9908, 0.9908, 0.9908], "total_agtd_delta": 3.9632, "tau_batch_reference": 5.0627}
+{"batch_id": "HUMAN_BATCH_075", "batch_size": 5, "commit_deltas": [1.0617, 1.0617, 1.0617, 1.0617, 1.0617], "total_agtd_delta": 5.3085, "tau_batch_reference": 6.0742}
+{"batch_id": "HUMAN_BATCH_076", "batch_size": 6, "commit_deltas": [0.3361, 0.3361, 0.3361, 0.3361, 0.3361, 0.3361], "total_agtd_delta": 2.0166, "tau_batch_reference": 7.0744}
+{"batch_id": "HUMAN_BATCH_077", "batch_size": 3, "commit_deltas": [1.4142, 1.4142, 1.4142], "total_agtd_delta": 4.2426, "tau_batch_reference": 4.0326}
+{"batch_id": "HUMAN_BATCH_078", "batch_size": 4, "commit_deltas": [0.5915, 0.5915, 0.5915, 0.5915], "total_agtd_delta": 2.366, "tau_batch_reference": 5.0627}
+{"batch_id": "HUMAN_BATCH_079", "batch_size": 5, "commit_deltas": [0.6784, 0.6784, 0.6784, 0.6784, 0.6784], "total_agtd_delta": 3.392, "tau_batch_reference": 6.0742}
+{"batch_id": "HUMAN_BATCH_080", "batch_size": 6, "commit_deltas": [0.7659, 0.7659, 0.7659, 0.7659, 0.7659, 0.7659], "total_agtd_delta": 4.5954, "tau_batch_reference": 7.0744}
+{"batch_id": "HUMAN_BATCH_081", "batch_size": 3, "commit_deltas": [0.9957, 0.9957, 0.9957], "total_agtd_delta": 2.9871, "tau_batch_reference": 4.0326}
+{"batch_id": "HUMAN_BATCH_082", "batch_size": 4, "commit_deltas": [1.0529, 1.0529, 1.0529, 1.0529], "total_agtd_delta": 4.2116, "tau_batch_reference": 5.0627}
+{"batch_id": "HUMAN_BATCH_083", "batch_size": 5, "commit_deltas": [1.1213, 1.1213, 1.1213, 1.1213, 1.1213], "total_agtd_delta": 5.6065, "tau_batch_reference": 6.0742}
+{"batch_id": "HUMAN_BATCH_084", "batch_size": 6, "commit_deltas": [0.394, 0.394, 0.394, 0.394, 0.394, 0.394], "total_agtd_delta": 2.364, "tau_batch_reference": 7.0744}
+{"batch_id": "HUMAN_BATCH_085", "batch_size": 3, "commit_deltas": [0.5716, 0.5716, 0.5716], "total_agtd_delta": 1.7148, "tau_batch_reference": 4.0326}
+{"batch_id": "HUMAN_BATCH_086", "batch_size": 4, "commit_deltas": [0.6536, 0.6536, 0.6536, 0.6536], "total_agtd_delta": 2.6144, "tau_batch_reference": 5.0627}
+{"batch_id": "HUMAN_BATCH_087", "batch_size": 5, "commit_deltas": [0.738, 0.738, 0.738, 0.738, 0.738], "total_agtd_delta": 3.69, "tau_batch_reference": 6.0742}
+{"batch_id": "HUMAN_BATCH_088", "batch_size": 6, "commit_deltas": [0.8238, 0.8238, 0.8238, 0.8238, 0.8238, 0.8238], "total_agtd_delta": 4.9428, "tau_batch_reference": 7.0744}
+{"batch_id": "HUMAN_BATCH_089", "batch_size": 3, "commit_deltas": [1.0616, 1.0616, 1.0616], "total_agtd_delta": 3.1848, "tau_batch_reference": 4.0326}
+{"batch_id": "HUMAN_BATCH_090", "batch_size": 4, "commit_deltas": [1.115, 1.115, 1.115, 1.115], "total_agtd_delta": 4.46, "tau_batch_reference": 5.0627}
+{"batch_id": "HUMAN_BATCH_091", "batch_size": 5, "commit_deltas": [0.3548, 0.3548, 0.3548, 0.3548, 0.3548], "total_agtd_delta": 1.774, "tau_batch_reference": 6.0742}
+{"batch_id": "HUMAN_BATCH_092", "batch_size": 6, "commit_deltas": [0.4518, 0.4518, 0.4518, 0.4518, 0.4518, 0.4518], "total_agtd_delta": 2.7108, "tau_batch_reference": 7.0744}
+{"batch_id": "HUMAN_BATCH_093", "batch_size": 3, "commit_deltas": [0.6376, 0.6376, 0.6376], "total_agtd_delta": 1.9128, "tau_batch_reference": 4.0326}
+{"batch_id": "HUMAN_BATCH_094", "batch_size": 4, "commit_deltas": [0.7157, 0.7157, 0.7157, 0.7157], "total_agtd_delta": 2.8628, "tau_batch_reference": 5.0627}
+{"batch_id": "HUMAN_BATCH_095", "batch_size": 5, "commit_deltas": [1.2568, 1.2568, 1.2568, 1.2568, 1.2568], "total_agtd_delta": 6.284, "tau_batch_reference": 6.0742}
+{"batch_id": "HUMAN_BATCH_096", "batch_size": 6, "commit_deltas": [0.8816, 0.8816, 0.8816, 0.8816, 0.8816, 0.8816], "total_agtd_delta": 5.2896, "tau_batch_reference": 7.0744}
+{"batch_id": "HUMAN_BATCH_097", "batch_size": 3, "commit_deltas": [1.1276, 1.1276, 1.1276], "total_agtd_delta": 3.3828, "tau_batch_reference": 4.0326}
+{"batch_id": "HUMAN_BATCH_098", "batch_size": 4, "commit_deltas": [0.3164, 0.3164, 0.3164, 0.3164], "total_agtd_delta": 1.2656, "tau_batch_reference": 5.0627}
+{"batch_id": "HUMAN_BATCH_099", "batch_size": 5, "commit_deltas": [0.4144, 0.4144, 0.4144, 0.4144, 0.4144], "total_agtd_delta": 2.072, "tau_batch_reference": 6.0742}
+{"batch_id": "HUMAN_BATCH_100", "batch_size": 6, "commit_deltas": [0.5097, 0.5097, 0.5097, 0.5097, 0.5097, 0.5097], "total_agtd_delta": 3.0582, "tau_batch_reference": 7.0744}

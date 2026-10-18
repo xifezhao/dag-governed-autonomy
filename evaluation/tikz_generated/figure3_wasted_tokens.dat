@@ -1,0 +1,5 @@
+n	naive_tokens	isolated_tokens	loo_tokens	dag_tokens	reduction_pct
+3	1840	1120	720	380	79.3
+4	2680	1580	960	410	84.7
+5	3675	2080	1240	450	87.8
+6	4920	2580	1560	492	90.0

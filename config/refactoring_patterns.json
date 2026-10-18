@@ -1,0 +1,17 @@
+{
+  "CYCLIC_DEPENDENCY": {
+    "pattern_name": "Dependency Inversion & Shared Interface Extraction",
+    "gof_reference": "Gang of Four: Structural / Behavioral Decoupling",
+    "actionable_guidance": "Break the cyclic dependency between the coupled modules. Extract the shared data structures or method contracts into an independent interface or utility module, or invert the dependency direction using dependency injection."
+  },
+  "LAYER_BREACH": {
+    "pattern_name": "Facade / Adapter / Inversion of Control",
+    "gof_reference": "Clean Architecture / Hexagonal Ports & Adapters",
+    "actionable_guidance": "Do not directly reference internal implementation classes across distinct architectural tiers. Introduce a boundary interface in the domain tier, or route requests through an authorized service facade."
+  },
+  "AGTD_SPIKE": {
+    "pattern_name": "Extract Method & Decompose Monolithic Scope",
+    "gof_reference": "Fowler's Refactoring: Dealing with Large Classes / Long Methods",
+    "actionable_guidance": "Your patch introduces an impermissible spike in Cognitive or McCabe complexity. Decompose long, nested conditional blocks (if-else, loops) into dedicated, well-encapsulated private helper methods to restore modular readability."
+  }
+}

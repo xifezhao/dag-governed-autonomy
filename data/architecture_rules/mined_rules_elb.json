@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "source_corpus": "H_clean (500 human-vetted commits across 12 repositories: 8 Python, 4 Java)",
+    "mining_parameters": {
+      "min_support": 0.15,
+      "min_confidence": 0.90,
+      "min_lift": 1.25
+    },
+    "paper_reference": "Section III-B (Equation 4: Layer Rule r_layer) & Section IV-B"
+  },
+  "forbidden_tier_dependencies": {
+    "Presentation": [
+      "Infrastructure",
+      "Database",
+      "Driver"
+    ],
+    "Infrastructure": [
+      "Presentation",
+      "UI",
+      "Controller"
+    ],
+    "Domain": [
+      "Presentation",
+      "UI",
+      "Infrastructure_Driver"
+    ]
+  },
+  "forbidden_package_dependencies": {
+    "src.presentation": [
+      "src.infrastructure.db",
+      "src.infrastructure.driver"
+    ],
+    "src.domain": [
+      "src.presentation",
+      "src.ui"
+    ],
+    "src.infrastructure": [
+      "src.presentation",
+      "src.api"
+    ]
+  }
+}

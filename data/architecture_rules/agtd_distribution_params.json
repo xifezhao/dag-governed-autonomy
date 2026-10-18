@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "source": "H_clean Curated Commits",
+    "sample_size": 250,
+    "theoretical_derivation": "Equation 8 (CLT Scale Threshold) & Equation 7 (Z-score Standardization)"
+  },
+  "calibrated_parameters": {
+    "historical_mu": 0.9042,
+    "historical_sigma": 0.4045
+  },
+  "submetric_distributions": {
+    "mccabe": {
+      "mu": 0.7949,
+      "sigma": 0.5179
+    },
+    "cognitive": {
+      "mu": 1.1793,
+      "sigma": 0.8407
+    },
+    "fanout": {
+      "mu": 0.617,
+      "sigma": 0.5796
+    }
+  },
+  "statistical_diagnostics": {
+    "agtd_skewness": 0.5225,
+    "agtd_kurtosis": -0.0097,
+    "agtd_iqr": 0.5411,
+    "is_heavy_tailed": false
+  }
+}

@@ -1,0 +1,78 @@
+# ==============================================================================
+# Artifact Replication Package: Dynamic Architectural Guardrail (DAG)
+# Paper: Governed Autonomy: Halting Architectural Entropy in Agentic Software 
+#        Workflows via Dynamic Guardrails (SANER 2026)
+# Track: Agentic AI systems and autonomous software engineering workflows
+# 
+# Python Runtime Compatibility: Python >= 3.10, <= 3.11
+# Build Standard: Fully pinned dependencies for 100% deterministic reproduction.
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Graph Calculus & Topological Analysis (Section III-A & Eq. 5 r_cycle)
+# ------------------------------------------------------------------------------
+# Core data structures for Hierarchical Attributed Graph (HPG) and Tarjan/Haeupler
+# Strongly Connected Component (SCC) decomposition in cycle_gate.py.
+networkx==3.3
+
+# ------------------------------------------------------------------------------
+# 2. Static Code Analysis & Metric Calculators (Section III-B & Eq. 7 AgTD)
+# ------------------------------------------------------------------------------
+# Computes McCabe Cyclomatic Complexity and physical metrics over target codebases.
+radon==6.0.1
+
+# Pure-Python Java 8-17 syntax tree parser for ast_visitor_java.py (Zero C-compiler dependency).
+javalang==0.13.0
+
+# Multi-language AST parsing infrastructure for polyglot repository ingestion.
+tree-sitter==0.21.3
+tree-sitter-python==0.21.0
+tree-sitter-java==0.21.0
+
+# ------------------------------------------------------------------------------
+# 3. Scientific Computing & Non-Parametric Statistics (Section V & Table I)
+# ------------------------------------------------------------------------------
+# Powers Central Limit Theorem variance computations (Eq. 8) and general math.
+numpy==1.26.4
+
+# High-precision statistical tests: Mann-Whitney U, Cliff's Delta, Chi-Square in evaluation/.
+scipy==1.13.1
+
+# Structured tabular processing for execution logs and telemetry datasets.
+pandas==2.2.2
+
+# ------------------------------------------------------------------------------
+# 4. Configuration, Serialization & Data Pipeline (config/ & mining/)
+# ------------------------------------------------------------------------------
+# Strict YAML parsing for config.yaml, arch_whitelist.yaml, and models_config.yaml.
+PyYAML==6.0.1
+
+# Data validation and schema enforcement for multi-agent payloads.
+pydantic==2.7.4
+
+# ------------------------------------------------------------------------------
+# 5. LLM Provider APIs & Token Accounting (Section IV-C & RQ2 Token Metric)
+# ------------------------------------------------------------------------------
+# Official commercial client for pinned GPT-4o snapshot execution (Section IV-C).
+openai==1.35.3
+
+# Anthropic client for model-agnostic robustness validation.
+anthropic==0.29.0
+
+# Fast BPE token estimation and length bounding for verbalization_engine.py.
+tiktoken==0.7.0
+
+# ------------------------------------------------------------------------------
+# 6. Evaluation Plotting & TeX Export (Section V, Figures 3 & 4)
+# ------------------------------------------------------------------------------
+# Vector graphics generation and TikZ data preparation.
+matplotlib==3.8.4
+seaborn==0.13.2
+
+# ------------------------------------------------------------------------------
+# 7. Testing, Mocking & Artifact Sanity Verification (Kick-the-Tires)
+# ------------------------------------------------------------------------------
+# Automated test execution for Artifact Evaluation pre-flight verification.
+pytest==8.2.2
+pytest-mock==3.14.0
+pytest-cov==5.0.0

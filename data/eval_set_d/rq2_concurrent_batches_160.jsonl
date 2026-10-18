@@ -1,0 +1,160 @@
+{"batch_id": "RQ2_N3_B01", "concurrency_n": 3, "batch_index_within_n": 0, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N3_B02", "concurrency_n": 3, "batch_index_within_n": 1, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N3_B03", "concurrency_n": 3, "batch_index_within_n": 2, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N3_B04", "concurrency_n": 3, "batch_index_within_n": 3, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N3_B05", "concurrency_n": 3, "batch_index_within_n": 4, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N3_B06", "concurrency_n": 3, "batch_index_within_n": 5, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N3_B07", "concurrency_n": 3, "batch_index_within_n": 6, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N3_B08", "concurrency_n": 3, "batch_index_within_n": 7, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N3_B09", "concurrency_n": 3, "batch_index_within_n": 8, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N3_B10", "concurrency_n": 3, "batch_index_within_n": 9, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N3_B11", "concurrency_n": 3, "batch_index_within_n": 10, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N3_B12", "concurrency_n": 3, "batch_index_within_n": 11, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N3_B13", "concurrency_n": 3, "batch_index_within_n": 12, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N3_B14", "concurrency_n": 3, "batch_index_within_n": 13, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N3_B15", "concurrency_n": 3, "batch_index_within_n": 14, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N3_B16", "concurrency_n": 3, "batch_index_within_n": 15, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N3_B17", "concurrency_n": 3, "batch_index_within_n": 16, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N3_B18", "concurrency_n": 3, "batch_index_within_n": 17, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N3_B19", "concurrency_n": 3, "batch_index_within_n": 18, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N3_B20", "concurrency_n": 3, "batch_index_within_n": 19, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N3_B21", "concurrency_n": 3, "batch_index_within_n": 20, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N3_B22", "concurrency_n": 3, "batch_index_within_n": 21, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N3_B23", "concurrency_n": 3, "batch_index_within_n": 22, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N3_B24", "concurrency_n": 3, "batch_index_within_n": 23, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N3_B25", "concurrency_n": 3, "batch_index_within_n": 24, "scenario": "EMERGENT_CO_CYCLE", "true_culpable_patches": ["p_1", "p_2"]}
+{"batch_id": "RQ2_N3_B26", "concurrency_n": 3, "batch_index_within_n": 25, "scenario": "EMERGENT_CO_CYCLE", "true_culpable_patches": ["p_1", "p_2"]}
+{"batch_id": "RQ2_N3_B27", "concurrency_n": 3, "batch_index_within_n": 26, "scenario": "EMERGENT_CO_CYCLE", "true_culpable_patches": ["p_1", "p_2"]}
+{"batch_id": "RQ2_N3_B28", "concurrency_n": 3, "batch_index_within_n": 27, "scenario": "EMERGENT_CO_CYCLE", "true_culpable_patches": ["p_1", "p_2"]}
+{"batch_id": "RQ2_N3_B29", "concurrency_n": 3, "batch_index_within_n": 28, "scenario": "EMERGENT_CO_CYCLE", "true_culpable_patches": ["p_1", "p_2"]}
+{"batch_id": "RQ2_N3_B30", "concurrency_n": 3, "batch_index_within_n": 29, "scenario": "EMERGENT_CO_CYCLE", "true_culpable_patches": ["p_1", "p_2"]}
+{"batch_id": "RQ2_N3_B31", "concurrency_n": 3, "batch_index_within_n": 30, "scenario": "EMERGENT_CO_CYCLE", "true_culpable_patches": ["p_1", "p_2"]}
+{"batch_id": "RQ2_N3_B32", "concurrency_n": 3, "batch_index_within_n": 31, "scenario": "EMERGENT_CO_CYCLE", "true_culpable_patches": ["p_1", "p_2"]}
+{"batch_id": "RQ2_N3_B33", "concurrency_n": 3, "batch_index_within_n": 32, "scenario": "SCALAR_DEBT_SPIKE", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N3_B34", "concurrency_n": 3, "batch_index_within_n": 33, "scenario": "SCALAR_DEBT_SPIKE", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N3_B35", "concurrency_n": 3, "batch_index_within_n": 34, "scenario": "SCALAR_DEBT_SPIKE", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N3_B36", "concurrency_n": 3, "batch_index_within_n": 35, "scenario": "SCALAR_DEBT_SPIKE", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N3_B37", "concurrency_n": 3, "batch_index_within_n": 36, "scenario": "SCALAR_DEBT_SPIKE", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N3_B38", "concurrency_n": 3, "batch_index_within_n": 37, "scenario": "SCALAR_DEBT_SPIKE", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N3_B39", "concurrency_n": 3, "batch_index_within_n": 38, "scenario": "SCALAR_DEBT_SPIKE", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N3_B40", "concurrency_n": 3, "batch_index_within_n": 39, "scenario": "DISTRIBUTED_DEBT_CO_SPIKE", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N4_B01", "concurrency_n": 4, "batch_index_within_n": 0, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N4_B02", "concurrency_n": 4, "batch_index_within_n": 1, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N4_B03", "concurrency_n": 4, "batch_index_within_n": 2, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N4_B04", "concurrency_n": 4, "batch_index_within_n": 3, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N4_B05", "concurrency_n": 4, "batch_index_within_n": 4, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N4_B06", "concurrency_n": 4, "batch_index_within_n": 5, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N4_B07", "concurrency_n": 4, "batch_index_within_n": 6, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N4_B08", "concurrency_n": 4, "batch_index_within_n": 7, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N4_B09", "concurrency_n": 4, "batch_index_within_n": 8, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N4_B10", "concurrency_n": 4, "batch_index_within_n": 9, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N4_B11", "concurrency_n": 4, "batch_index_within_n": 10, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N4_B12", "concurrency_n": 4, "batch_index_within_n": 11, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N4_B13", "concurrency_n": 4, "batch_index_within_n": 12, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N4_B14", "concurrency_n": 4, "batch_index_within_n": 13, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N4_B15", "concurrency_n": 4, "batch_index_within_n": 14, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N4_B16", "concurrency_n": 4, "batch_index_within_n": 15, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N4_B17", "concurrency_n": 4, "batch_index_within_n": 16, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N4_B18", "concurrency_n": 4, "batch_index_within_n": 17, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N4_B19", "concurrency_n": 4, "batch_index_within_n": 18, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N4_B20", "concurrency_n": 4, "batch_index_within_n": 19, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N4_B21", "concurrency_n": 4, "batch_index_within_n": 20, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N4_B22", "concurrency_n": 4, "batch_index_within_n": 21, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N4_B23", "concurrency_n": 4, "batch_index_within_n": 22, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N4_B24", "concurrency_n": 4, "batch_index_within_n": 23, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N4_B25", "concurrency_n": 4, "batch_index_within_n": 24, "scenario": "EMERGENT_CO_CYCLE", "true_culpable_patches": ["p_1", "p_2"]}
+{"batch_id": "RQ2_N4_B26", "concurrency_n": 4, "batch_index_within_n": 25, "scenario": "EMERGENT_CO_CYCLE", "true_culpable_patches": ["p_1", "p_2"]}
+{"batch_id": "RQ2_N4_B27", "concurrency_n": 4, "batch_index_within_n": 26, "scenario": "EMERGENT_CO_CYCLE", "true_culpable_patches": ["p_1", "p_2"]}
+{"batch_id": "RQ2_N4_B28", "concurrency_n": 4, "batch_index_within_n": 27, "scenario": "EMERGENT_CO_CYCLE", "true_culpable_patches": ["p_1", "p_2"]}
+{"batch_id": "RQ2_N4_B29", "concurrency_n": 4, "batch_index_within_n": 28, "scenario": "EMERGENT_CO_CYCLE", "true_culpable_patches": ["p_1", "p_2"]}
+{"batch_id": "RQ2_N4_B30", "concurrency_n": 4, "batch_index_within_n": 29, "scenario": "EMERGENT_CO_CYCLE", "true_culpable_patches": ["p_1", "p_2"]}
+{"batch_id": "RQ2_N4_B31", "concurrency_n": 4, "batch_index_within_n": 30, "scenario": "EMERGENT_CO_CYCLE", "true_culpable_patches": ["p_1", "p_2"]}
+{"batch_id": "RQ2_N4_B32", "concurrency_n": 4, "batch_index_within_n": 31, "scenario": "EMERGENT_CO_CYCLE", "true_culpable_patches": ["p_1", "p_2"]}
+{"batch_id": "RQ2_N4_B33", "concurrency_n": 4, "batch_index_within_n": 32, "scenario": "SCALAR_DEBT_SPIKE", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N4_B34", "concurrency_n": 4, "batch_index_within_n": 33, "scenario": "SCALAR_DEBT_SPIKE", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N4_B35", "concurrency_n": 4, "batch_index_within_n": 34, "scenario": "SCALAR_DEBT_SPIKE", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N4_B36", "concurrency_n": 4, "batch_index_within_n": 35, "scenario": "SCALAR_DEBT_SPIKE", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N4_B37", "concurrency_n": 4, "batch_index_within_n": 36, "scenario": "SCALAR_DEBT_SPIKE", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N4_B38", "concurrency_n": 4, "batch_index_within_n": 37, "scenario": "SCALAR_DEBT_SPIKE", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N4_B39", "concurrency_n": 4, "batch_index_within_n": 38, "scenario": "SCALAR_DEBT_SPIKE", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N4_B40", "concurrency_n": 4, "batch_index_within_n": 39, "scenario": "DISTRIBUTED_DEBT_CO_SPIKE", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N5_B01", "concurrency_n": 5, "batch_index_within_n": 0, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N5_B02", "concurrency_n": 5, "batch_index_within_n": 1, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N5_B03", "concurrency_n": 5, "batch_index_within_n": 2, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N5_B04", "concurrency_n": 5, "batch_index_within_n": 3, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N5_B05", "concurrency_n": 5, "batch_index_within_n": 4, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N5_B06", "concurrency_n": 5, "batch_index_within_n": 5, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N5_B07", "concurrency_n": 5, "batch_index_within_n": 6, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N5_B08", "concurrency_n": 5, "batch_index_within_n": 7, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N5_B09", "concurrency_n": 5, "batch_index_within_n": 8, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N5_B10", "concurrency_n": 5, "batch_index_within_n": 9, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N5_B11", "concurrency_n": 5, "batch_index_within_n": 10, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N5_B12", "concurrency_n": 5, "batch_index_within_n": 11, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N5_B13", "concurrency_n": 5, "batch_index_within_n": 12, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N5_B14", "concurrency_n": 5, "batch_index_within_n": 13, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N5_B15", "concurrency_n": 5, "batch_index_within_n": 14, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N5_B16", "concurrency_n": 5, "batch_index_within_n": 15, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N5_B17", "concurrency_n": 5, "batch_index_within_n": 16, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N5_B18", "concurrency_n": 5, "batch_index_within_n": 17, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N5_B19", "concurrency_n": 5, "batch_index_within_n": 18, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N5_B20", "concurrency_n": 5, "batch_index_within_n": 19, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N5_B21", "concurrency_n": 5, "batch_index_within_n": 20, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N5_B22", "concurrency_n": 5, "batch_index_within_n": 21, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N5_B23", "concurrency_n": 5, "batch_index_within_n": 22, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N5_B24", "concurrency_n": 5, "batch_index_within_n": 23, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N5_B25", "concurrency_n": 5, "batch_index_within_n": 24, "scenario": "EMERGENT_CO_CYCLE", "true_culpable_patches": ["p_1", "p_2"]}
+{"batch_id": "RQ2_N5_B26", "concurrency_n": 5, "batch_index_within_n": 25, "scenario": "EMERGENT_CO_CYCLE", "true_culpable_patches": ["p_1", "p_2"]}
+{"batch_id": "RQ2_N5_B27", "concurrency_n": 5, "batch_index_within_n": 26, "scenario": "EMERGENT_CO_CYCLE", "true_culpable_patches": ["p_1", "p_2"]}
+{"batch_id": "RQ2_N5_B28", "concurrency_n": 5, "batch_index_within_n": 27, "scenario": "EMERGENT_CO_CYCLE", "true_culpable_patches": ["p_1", "p_2"]}
+{"batch_id": "RQ2_N5_B29", "concurrency_n": 5, "batch_index_within_n": 28, "scenario": "EMERGENT_CO_CYCLE", "true_culpable_patches": ["p_1", "p_2"]}
+{"batch_id": "RQ2_N5_B30", "concurrency_n": 5, "batch_index_within_n": 29, "scenario": "EMERGENT_CO_CYCLE", "true_culpable_patches": ["p_1", "p_2"]}
+{"batch_id": "RQ2_N5_B31", "concurrency_n": 5, "batch_index_within_n": 30, "scenario": "EMERGENT_CO_CYCLE", "true_culpable_patches": ["p_1", "p_2"]}
+{"batch_id": "RQ2_N5_B32", "concurrency_n": 5, "batch_index_within_n": 31, "scenario": "EMERGENT_CO_CYCLE", "true_culpable_patches": ["p_1", "p_2"]}
+{"batch_id": "RQ2_N5_B33", "concurrency_n": 5, "batch_index_within_n": 32, "scenario": "SCALAR_DEBT_SPIKE", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N5_B34", "concurrency_n": 5, "batch_index_within_n": 33, "scenario": "SCALAR_DEBT_SPIKE", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N5_B35", "concurrency_n": 5, "batch_index_within_n": 34, "scenario": "SCALAR_DEBT_SPIKE", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N5_B36", "concurrency_n": 5, "batch_index_within_n": 35, "scenario": "SCALAR_DEBT_SPIKE", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N5_B37", "concurrency_n": 5, "batch_index_within_n": 36, "scenario": "SCALAR_DEBT_SPIKE", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N5_B38", "concurrency_n": 5, "batch_index_within_n": 37, "scenario": "SCALAR_DEBT_SPIKE", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N5_B39", "concurrency_n": 5, "batch_index_within_n": 38, "scenario": "SCALAR_DEBT_SPIKE", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N5_B40", "concurrency_n": 5, "batch_index_within_n": 39, "scenario": "DISTRIBUTED_DEBT_CO_SPIKE", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N6_B01", "concurrency_n": 6, "batch_index_within_n": 0, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N6_B02", "concurrency_n": 6, "batch_index_within_n": 1, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N6_B03", "concurrency_n": 6, "batch_index_within_n": 2, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N6_B04", "concurrency_n": 6, "batch_index_within_n": 3, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N6_B05", "concurrency_n": 6, "batch_index_within_n": 4, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N6_B06", "concurrency_n": 6, "batch_index_within_n": 5, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N6_B07", "concurrency_n": 6, "batch_index_within_n": 6, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N6_B08", "concurrency_n": 6, "batch_index_within_n": 7, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N6_B09", "concurrency_n": 6, "batch_index_within_n": 8, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N6_B10", "concurrency_n": 6, "batch_index_within_n": 9, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N6_B11", "concurrency_n": 6, "batch_index_within_n": 10, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N6_B12", "concurrency_n": 6, "batch_index_within_n": 11, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N6_B13", "concurrency_n": 6, "batch_index_within_n": 12, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N6_B14", "concurrency_n": 6, "batch_index_within_n": 13, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N6_B15", "concurrency_n": 6, "batch_index_within_n": 14, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N6_B16", "concurrency_n": 6, "batch_index_within_n": 15, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N6_B17", "concurrency_n": 6, "batch_index_within_n": 16, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N6_B18", "concurrency_n": 6, "batch_index_within_n": 17, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N6_B19", "concurrency_n": 6, "batch_index_within_n": 18, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N6_B20", "concurrency_n": 6, "batch_index_within_n": 19, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N6_B21", "concurrency_n": 6, "batch_index_within_n": 20, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N6_B22", "concurrency_n": 6, "batch_index_within_n": 21, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N6_B23", "concurrency_n": 6, "batch_index_within_n": 22, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N6_B24", "concurrency_n": 6, "batch_index_within_n": 23, "scenario": "SINGLE_STRUCTURAL", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N6_B25", "concurrency_n": 6, "batch_index_within_n": 24, "scenario": "EMERGENT_CO_CYCLE", "true_culpable_patches": ["p_1", "p_2"]}
+{"batch_id": "RQ2_N6_B26", "concurrency_n": 6, "batch_index_within_n": 25, "scenario": "EMERGENT_CO_CYCLE", "true_culpable_patches": ["p_1", "p_2"]}
+{"batch_id": "RQ2_N6_B27", "concurrency_n": 6, "batch_index_within_n": 26, "scenario": "EMERGENT_CO_CYCLE", "true_culpable_patches": ["p_1", "p_2"]}
+{"batch_id": "RQ2_N6_B28", "concurrency_n": 6, "batch_index_within_n": 27, "scenario": "EMERGENT_CO_CYCLE", "true_culpable_patches": ["p_1", "p_2"]}
+{"batch_id": "RQ2_N6_B29", "concurrency_n": 6, "batch_index_within_n": 28, "scenario": "EMERGENT_CO_CYCLE", "true_culpable_patches": ["p_1", "p_2"]}
+{"batch_id": "RQ2_N6_B30", "concurrency_n": 6, "batch_index_within_n": 29, "scenario": "EMERGENT_CO_CYCLE", "true_culpable_patches": ["p_1", "p_2"]}
+{"batch_id": "RQ2_N6_B31", "concurrency_n": 6, "batch_index_within_n": 30, "scenario": "EMERGENT_CO_CYCLE", "true_culpable_patches": ["p_1", "p_2"]}
+{"batch_id": "RQ2_N6_B32", "concurrency_n": 6, "batch_index_within_n": 31, "scenario": "EMERGENT_CO_CYCLE", "true_culpable_patches": ["p_1", "p_2"]}
+{"batch_id": "RQ2_N6_B33", "concurrency_n": 6, "batch_index_within_n": 32, "scenario": "SCALAR_DEBT_SPIKE", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N6_B34", "concurrency_n": 6, "batch_index_within_n": 33, "scenario": "SCALAR_DEBT_SPIKE", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N6_B35", "concurrency_n": 6, "batch_index_within_n": 34, "scenario": "SCALAR_DEBT_SPIKE", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N6_B36", "concurrency_n": 6, "batch_index_within_n": 35, "scenario": "SCALAR_DEBT_SPIKE", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N6_B37", "concurrency_n": 6, "batch_index_within_n": 36, "scenario": "SCALAR_DEBT_SPIKE", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N6_B38", "concurrency_n": 6, "batch_index_within_n": 37, "scenario": "SCALAR_DEBT_SPIKE", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N6_B39", "concurrency_n": 6, "batch_index_within_n": 38, "scenario": "SCALAR_DEBT_SPIKE", "true_culpable_patches": ["p_1"]}
+{"batch_id": "RQ2_N6_B40", "concurrency_n": 6, "batch_index_within_n": 39, "scenario": "DISTRIBUTED_DEBT_CO_SPIKE", "true_culpable_patches": ["p_1"]}

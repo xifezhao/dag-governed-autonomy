@@ -1,0 +1,132 @@
+# ==============================================================================
+# Artifact Replication Package: Dynamic Architectural Guardrail (DAG)
+# Paper: Governed Autonomy: Halting Architectural Entropy in Agentic Software 
+#        Workflows via Dynamic Guardrails (SANER 2026)
+# Track: Agentic AI systems and autonomous software engineering workflows
+# 
+# Description: Global System, Algorithmic Hyperparameters, and Execution Config
+# Standards: Compliant with IEEE/ACM Artifact Evaluation Guidelines (Badges: Reusable)
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Global System & Reproducibility Controls
+# ------------------------------------------------------------------------------
+reproducibility:
+  seed: 42                          # Global random seed for deterministic dataset sampling & agent scheduling
+  deterministic_dispatch: true      # Enforce deterministic tie-breaking in priority queues
+  torch_deterministic: true         # Set PyTorch backend to deterministic mode if embedding models are invoked
+  log_level: "INFO"                 # Logging verbosity: DEBUG, INFO, WARNING, ERROR
+  export_visual_artifacts: true     # Automatically generate TikZ-compatible tables & CSV records
+
+# ------------------------------------------------------------------------------
+# 2. Stage I: Submission & Bounded Arbitration (Paper Section III-A)
+# ------------------------------------------------------------------------------
+arbitration:
+  # Loop Execution Budget
+  # Corresponds to K in Algorithm 1. Empirically determined to truncate heavy-tail oscillations.
+  max_retries: 10                   # [Range: 5-20] Hard bound on maximum multi-agent generation iterations
+  
+  # Priority Bounds & Starvation-Free Aging Factor
+  # Implements Eq. 2: Priority(ΔC_i) = BasePriority(A_i) + λ * DeferralCount(ΔC_i)
+  base_priority:
+    min_priority: 1.0               # Minimum possible base priority assigned to an agent
+    max_priority: 5.0               # Maximum possible base priority (e.g., specialized architect agent)
+    default_priority: 1.0           # Default priority for standard coder agents
+    
+  # Theoretical Constraint Check (Eq. 3):
+  # Requirement: λ >= (max(BasePriority) - min(BasePriority)) / (MaxRetries - 1)
+  # Here: (5.0 - 1.0) / (10 - 1) = 4.0 / 9 ≈ 0.4444.
+  # We set λ = 0.50 to strictly satisfy the mathematical starvation-free lower bound.
+  aging_factor_lambda: 0.50         # [Range: >= 0.45] Aging step increment per deferred epoch
+  
+  # Conflict Pre-Check Configuration (Eq. 1)
+  conflict_detection:
+    granularity: "AST_NODE"         # Resolution level: "AST_NODE" | "LINE_DIFF" | "FILE_LEVEL"
+    strict_syntactic_overlap: true  # Touched(ΔC_i) ∩ Touched(ΔC_j) != ∅ triggers optimistic deferral
+
+# ------------------------------------------------------------------------------
+# 3. Stage II: Incremental Graph Calculus & Gating (Paper Section III-B)
+# ------------------------------------------------------------------------------
+gating:
+  # Incremental Graph Update Operator (Eq. 4: G' = G ⊕ ΔC_orth)
+  graph_engine:
+    parser_backend: "tree-sitter"   # AST parser: "tree-sitter" (Python/Java) or "javaparser"
+    incremental_caching: true       # Cache unchanged subgraphs; complexity bounded to O(|ΔC_AST| + k-hop)
+    max_k_hop_propagation: 2        # Structural propagation boundary for dependent metric invalidation
+    
+  # Rule 1: Whitelisted Cyclic Dependency Gate (Eq. 5: r_cycle)
+  cycle_gate:
+    enabled: true
+    algorithm: "haeupler_scc"       # Dynamic incremental SCC maintenance: "haeupler_scc" | "tarjan_recompute"
+    amortized_bound_scaling: true   # Asserts O(|E^+| * sqrt(|E|)) computational upper bound
+    whitelist_file: "config/arch_whitelist.yaml" # Explicitly ratified patterns (Observer, Visitor)
+    
+  # Rule 2: Empirical Layer Violation Gate (Eq. 6: r_layer)
+  layer_gate:
+    enabled: true
+    mined_rules_path: "data/architecture_rules/mined_rules_elb.json" # Mined from H_clean via ARM
+    enforce_reclassification_check: true # Validates E_re-eval incident edges (prevents deadlock-by-omission)
+    treat_as_elb: true              # Acknowledges rules as Empirical Lower Bound (ELB)
+    
+  # Rule 3: Normalized AgTD Gating & CLT Scaling (Eq. 7 & Eq. 8: r_debt)
+  agtd_gate:
+    enabled: true
+    composite_weights:              # Weights for normalized metrics: w1 * McCabe + w2 * Cognitive + w3 * FanOut
+      mccabe: 0.35
+      cognitive: 0.40               # Prioritized to penalize nested, unmodularized monolithic LLM generation
+      fan_out: 0.25                 # Penalizes bypassed layer abstractions and coupling inflation
+    
+    # Statistical Threshold Scaling Parameters (Derived from H_clean human commit distribution)
+    # Calibrated on historical clean commits: μ_unit = 0.42, σ_unit = 0.85
+    baseline_distribution:
+      historical_mu: 0.42           # μ_AgTD: Empirical mean of AgTD degradation per human commit
+      historical_sigma: 0.85        # σ_AgTD: Empirical standard deviation per human commit
+      
+    # Dynamic CLT Concurrency Scaling (Eq. 8: τ_batch = n*μ + z*sqrt(n)*σ)
+    statistical_scaling:
+      clt_scaling_mode: "sqrt_n"    # Invariant statistical scaling via Central Limit Theorem
+      z_score: 1.96                 # 95% Confidence Interval limit (z=1.645 for 90%, z=2.576 for 99%)
+
+# ------------------------------------------------------------------------------
+# 4. Stage III: Attribution, Anti-Oscillation & Isolation (Paper Section III-C)
+# ------------------------------------------------------------------------------
+attribution:
+  # Exhaustive Attribution Mapping (Eq. 9: Attr(v))
+  # Isolates structural blame strictly to offending edges E^+ and re-tagged nodes V_re-tag
+  structural_attribution:
+    track_metadata_reclassification: true # Maps V_re-tag(ΔC_i) to eliminate attribution loopholes
+    strict_edge_intersection: true        # Blames Agent i only if v.edges ∩ E^+(ΔC_i) != ∅
+    
+  # Scalar AgTD Spike Proportional Allocation (Eq. 9, Second Branch)
+  scalar_attribution:
+    tolerance_coefficient_eta: 1.20 # η: Blames agents contributing >= 1.2x their fair batch share (η * τ/n)
+    
+  # Cryptographic State Fingerprinting & Anti-Oscillation (Eq. 10)
+  anti_oscillation:
+    hash_algorithm: "sha256"        # Cryptographic digest for state signature: Hash(Sort(v.signatures))
+    detection_window: "FULL_HISTORY" # Retains entire epoch history to detect arbitrary periodic livelocks
+    
+  # Single-Point Fault Isolation Protocol (Section III-C & Algorithm 1 Line 16-18)
+  fault_isolation:
+    enabled: true                   # Enables graceful degradation instead of batch-wide aborts
+    action_on_recurring_hash: "SINGLE_POINT_ISOLATION" # "SINGLE_POINT_ISOLATION" | "GLOBAL_FALLBACK"
+    isolate_culpable_only: true     # Removes strictly ΔC_i from ΔC_orth, permitting healthy patches to commit
+    fallback_on_empty_merge: true   # Dispatches human review alert if all concurrent patches are quarantined
+
+# ------------------------------------------------------------------------------
+# 5. Multi-Agent Feedback & Prompt Synthesis
+# ------------------------------------------------------------------------------
+feedback_synthesis:
+  verbalization_mode: "TEMPLATED"   # "TEMPLATED" (Deterministic synthesis) | "LLM_FREEFORM" (Not recommended)
+  design_pattern_db: "config/refactoring_patterns.json" # Pattern retrieval: e.g., Cycle -> Dependency Inversion
+  max_prompt_context_tokens: 1024   # Bounded prompt injection length to prevent context flooding
+  inherit_aging_on_regeneration: true # Preserves DeferralCount across regenerations to maintain Eq. 3
+
+# ------------------------------------------------------------------------------
+# 6. Evaluation Paths & Data Partitions (Paper Section IV-B)
+# ------------------------------------------------------------------------------
+paths:
+  h_clean_commits: "data/clean_history_h/curated_commits.jsonl" # Historical clean commits (Rule Mining)
+  d_eval_tasks: "data/eval_set_d/benchmarks_500.jsonl"          # Curated 500 evaluation cross-module tasks
+  output_logs_dir: "logs_and_artifacts/"                       # Execution traces & livelock trajectory logs
+  tikz_output_dir: "evaluation/tikz_generated/"                # Export path for Figures 3 & 4 data vectors

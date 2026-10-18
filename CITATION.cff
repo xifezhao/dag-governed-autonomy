@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software or benchmark corpus in your research, please cite our SANER 2026 paper."
+title: "Governed Autonomy: Halting Architectural Entropy in Agentic Software Workflows via Dynamic Guardrails"
+version: "1.0.0"
+date-released: 2026-03-01
+license: "Apache-2.0"
+repository-code: "https://github.com/anonymous/dag-governed-autonomy"
+authors:
+  - name: "Anonymous Authors (SANER 2026 Submission)"
+preferred-citation:
+  type: conference-paper
+  title: "Governed Autonomy: Halting Architectural Entropy in Agentic Software Workflows via Dynamic Guardrails"
+  authors:
+    - name: "Anonymous Authors"
+  collection-title: "Proceedings of the IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER 2026)"
+  year: 2026

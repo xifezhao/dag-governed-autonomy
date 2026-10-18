@@ -1,0 +1,229 @@
+# ==============================================================================
+# Artifact Replication Package: Dynamic Architectural Guardrail (DAG)
+# Paper: Governed Autonomy: Halting Architectural Entropy in Agentic Software 
+#        Workflows via Dynamic Guardrails (SANER 2026)
+# Track: Agentic AI systems and autonomous software engineering workflows
+# 
+# Component: Architectural Whitelist Registry (\mathcal{A} in Eq. 5)
+# Target Rule: r_cycle (Whitelisted Strongly Connected Components)
+# 
+# Schema Version: 2.1.0-ae
+# Standards: Compliant with IEEE/ACM Artifact Evaluation Guidelines (Badge: Reusable)
+# Description: Defines formally vetted structural patterns (e.g., Gang of Four, 
+#              DDD aggregate cycles) exempt from cyclical dependency gating.
+# ==============================================================================
+
+metadata:
+  target_equation: "Eq. 5 (Whitelisted Cyclic Dependency Rule)"
+  mining_source: "ARM on Historical Clean Commits (H_clean)"
+  min_historical_confidence: 0.95
+  audit_status: "HUMAN_ARCHITECT_RATIFIED"
+  last_vetted_date: "2026-08-15"
+
+# ------------------------------------------------------------------------------
+# 1. Matching Engine Global Semantics
+# ------------------------------------------------------------------------------
+engine_settings:
+  # Matching modes:
+  # - STRUCTURAL_ISOMORPHISM: Subgraph topology must match node roles & edge kinds
+  # - INTERFACE_CONTRACT: Checks inheritance and method parameter contracts
+  # - SIGNATURE_REGEX: Fallback regex on class/interface names
+  evaluation_mode: "STRUCTURAL_ISOMORPHISM"
+  enforce_strict_interfaces: true   # Cycles must be mediated by abstract interfaces
+  max_exempt_cycle_length: 3        # Cycles of length > 3 are rejected regardless of pattern
+  log_whitelist_hits: true          # Emit provenance audit logs when an SCC is bypassed
+
+# ------------------------------------------------------------------------------
+# 2. Ratified Architectural Patterns Catalog (\mathcal{A})
+# ------------------------------------------------------------------------------
+ratified_patterns:
+
+  # ----------------------------------------------------------------------------
+  # Pattern 1: Observer / Listener Pattern (GoF Behavioral)
+  # Rationale: Subject maintains a collection of Observers; ConcreteObserver 
+  #            maintains a reference back to Subject to inspect state updates.
+  # ----------------------------------------------------------------------------
+  - pattern_id: "PAT-GOF-OBSERVER-01"
+    name: "Observer/Observable Bidirectional Coupling"
+    category: "BEHAVIORAL"
+    formal_topology:
+      nodes:
+        - role: "Subject"
+          type_constraint: "CLASS_OR_INTERFACE"
+          naming_pattern: ".*(Subject|Observable|Emitter|Publisher|Broadcaster).*"
+        - role: "Observer"
+          type_constraint: "INTERFACE"
+          naming_pattern: ".*(Observer|Listener|Subscriber|Handler).*"
+        - role: "ConcreteObserver"
+          type_constraint: "CLASS"
+      edges:
+        - from_role: "Subject"
+          to_role: "Observer"
+          edge_types: ["IMPORT", "INVOKE", "AGGREGATE"]
+        - from_role: "ConcreteObserver"
+          to_role: "Subject"
+          edge_types: ["IMPORT", "INVOKE"]
+        - from_role: "ConcreteObserver"
+          to_role: "Observer"
+          edge_types: ["INHERIT"]
+    language_spec:
+      java:
+        accepted_annotations: ["@EventListener", "@Subscribe"]
+        jdk_contracts: ["java.beans.PropertyChangeListener", "java.util.concurrent.Flow$Subscriber"]
+      python:
+        accepted_signatures: ["def update(self, *args, **kwargs)", "def notify(self)"]
+    audit_provenance:
+      ratified_by: "Lead Systems Architect & Automated ARM Pipeline"
+      historical_support: 0.142
+      rationale: "Standard event notification loop; harmless if Observer is pure interface."
+
+  # ----------------------------------------------------------------------------
+  # Pattern 2: Visitor Pattern / Double Dispatch (GoF Behavioral)
+  # Rationale: Element references Visitor in `accept(Visitor v)`, and Visitor 
+  #            references Element in `visit(Element e)`. Essential for AST traversals.
+  # ----------------------------------------------------------------------------
+  - pattern_id: "PAT-GOF-VISITOR-02"
+    name: "Visitor Double-Dispatch Cycle"
+    category: "BEHAVIORAL"
+    formal_topology:
+      nodes:
+        - role: "VisitorInterface"
+          type_constraint: "INTERFACE"
+          naming_pattern: ".*Visitor.*"
+        - role: "ElementInterface"
+          type_constraint: "INTERFACE"
+          naming_pattern: ".*(Visitable|Element|ASTNode|Component).*"
+      edges:
+        - from_role: "ElementInterface"
+          to_role: "VisitorInterface"
+          edge_types: ["INVOKE_PARAM"] # accept(Visitor)
+        - from_role: "VisitorInterface"
+          to_role: "ElementInterface"
+          edge_types: ["INVOKE_PARAM"] # visit(Element)
+    language_spec:
+      java:
+        required_method_pairs:
+          element_accept: "accept(*Visitor*)"
+          visitor_visit: "visit(*Element*)"
+      python:
+        required_method_pairs:
+          element_accept: "accept"
+          visitor_visit: "visit"
+    audit_provenance:
+      ratified_by: "Compiler Engineering Team & Reviewer Panel"
+      historical_support: 0.089
+      rationale: "Double dispatch design; decoupled using static method overloading."
+
+  # ----------------------------------------------------------------------------
+  # Pattern 3: Composite Pattern (GoF Structural)
+  # Rationale: Component declares interface for objects in composition;
+  #            Composite stores child Components and implements Component interface.
+  # ----------------------------------------------------------------------------
+  - pattern_id: "PAT-GOF-COMPOSITE-03"
+    name: "Composite Self-Referential Hierarchy"
+    category: "STRUCTURAL"
+    formal_topology:
+      nodes:
+        - role: "Component"
+          type_constraint: "INTERFACE_OR_ABSTRACT"
+          naming_pattern: ".*(Component|Node|Item|Element).*"
+        - role: "Composite"
+          type_constraint: "CLASS"
+          naming_pattern: ".*(Composite|Group|Container|CompositeNode).*"
+      edges:
+        - from_role: "Composite"
+          to_role: "Component"
+          edge_types: ["INHERIT", "AGGREGATE"] # Implements Component AND contains children
+    language_spec:
+      java:
+        required_collection_types: ["java.util.List", "java.util.Set", "java.util.Collection"]
+      python:
+        required_collection_types: ["list", "set", "dict"]
+    audit_provenance:
+      ratified_by: "Domain Architect"
+      historical_support: 0.115
+      rationale: "Recursive tree structure; internal reference cycle is design-invariant."
+
+  # ----------------------------------------------------------------------------
+  # Pattern 4: State / Context Pattern (GoF Behavioral)
+  # Rationale: Context delegates state-specific requests to CurrentState;
+  #            ConcreteState transitions Context to a new state by calling context.setState().
+  # ----------------------------------------------------------------------------
+  - pattern_id: "PAT-GOF-STATE-04"
+    name: "State Transition Context Cycle"
+    category: "BEHAVIORAL"
+    formal_topology:
+      nodes:
+        - role: "Context"
+          type_constraint: "CLASS"
+          naming_pattern: ".*(Context|Machine|StateMachine|Session).*"
+        - role: "State"
+          type_constraint: "INTERFACE_OR_ABSTRACT"
+          naming_pattern: ".*(State|Phase|Status).*"
+      edges:
+        - from_role: "Context"
+          to_role: "State"
+          edge_types: ["AGGREGATE", "INVOKE"]
+        - from_role: "State"
+          to_role: "Context"
+          edge_types: ["INVOKE_PARAM"] # state.handle(Context)
+    language_spec:
+      java:
+        method_signature_matching: "handle(*Context*)"
+      python:
+        method_signature_matching: "def handle(self, context)"
+    audit_provenance:
+      ratified_by: "Architecture Review Board"
+      historical_support: 0.063
+      rationale: "State transitions require mutual reference; constrained to finite states."
+
+  # ----------------------------------------------------------------------------
+  # Pattern 5: Domain-Driven Design (DDD) Entity-Aggregate Parent Back-Reference
+  # Rationale: Aggregate Root owns Child Entities. Child Entity holds a back-reference 
+  #            to its parent Aggregate Root to maintain invariant consistency.
+  # ----------------------------------------------------------------------------
+  - pattern_id: "PAT-DDD-AGGREGATE-05"
+    name: "Aggregate Root and Internal Entity Back-Reference"
+    category: "DOMAIN_DRIVEN_DESIGN"
+    formal_topology:
+      nodes:
+        - role: "AggregateRoot"
+          type_constraint: "CLASS"
+          naming_pattern: ".*(Aggregate|Root|Order|Account|EntityRoot).*"
+        - role: "ChildEntity"
+          type_constraint: "CLASS"
+          naming_pattern: ".*(Item|LineItem|Entry|Detail|Child).*"
+      edges:
+        - from_role: "AggregateRoot"
+          to_role: "ChildEntity"
+          edge_types: ["AGGREGATE"] # One-to-many relationship
+        - from_role: "ChildEntity"
+          to_role: "AggregateRoot"
+          edge_types: ["IMPORT", "ASSOCIATE"] # Parent navigation back-reference
+    language_spec:
+      java:
+        accepted_annotations: ["@Entity", "@AggregateRoot", "@Embedded"]
+      python:
+        accepted_base_classes: ["BaseEntity", "AggregateRoot", "models.Model"]
+    audit_provenance:
+      ratified_by: "Enterprise Domain Modeler"
+      historical_support: 0.178
+      rationale: "Bounded context consistency; cycle is internal to a single aggregate module."
+
+# ------------------------------------------------------------------------------
+# 3. Explicit Prohibited Patterns (Blacklist Guard within Whitelist)
+# Rationale: Ensures agents cannot game the whitelist by falsely labeling 
+#            arbitrary spaghetti code as an "Observer" or "Visitor".
+# ------------------------------------------------------------------------------
+anti_gaming_rules:
+  - id: "BLOCK-CROSS-LAYER-CYCLIC"
+    description: "No pattern exemption applies if edges cross distinct architectural tiers (e.g., UI <-> Infra)"
+    prohibited_layers_combination:
+      - ["Presentation", "Infrastructure"]
+      - ["Domain", "Infrastructure_Driver"]
+    rejection_reason: "Violates fundamental layer hierarchy regardless of design pattern claims."
+
+  - id: "BLOCK-ANONYMOUS-PACKAGE-CYCLE"
+    description: "Cycles involving root or unassigned packages are categorically non-exempt"
+    target_package_pattern: "^(default|unnamed|tmp|util)$"
+    rejection_reason: "Lack of explicit architectural boundaries; potential technical debt hiding."

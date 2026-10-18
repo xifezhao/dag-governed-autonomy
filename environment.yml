@@ -1,0 +1,72 @@
+# ==============================================================================
+# Artifact Replication Package: Dynamic Architectural Guardrail (DAG)
+# Paper: Governed Autonomy: Halting Architectural Entropy in Agentic Software 
+#        Workflows via Dynamic Guardrails (SANER 2026)
+# Track: Agentic AI systems and autonomous software engineering workflows
+# 
+# Description: Conda Virtual Environment Specification
+# Build Standard: Pinned Conda-Forge + PyPI dependencies for seamless reproduction.
+# Usage:
+#   conda env create -f environment.yml
+#   conda activate dag-ae
+# ==============================================================================
+
+name: dag-ae
+
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  # ----------------------------------------------------------------------------
+  # 1. Base Runtime & Build Tooling
+  # ----------------------------------------------------------------------------
+  - python=3.10.14
+  - pip=24.0
+  - git
+
+  # ----------------------------------------------------------------------------
+  # 2. Graph Algorithms & Scientific Foundations (Conda-Forge Binaries)
+  # ----------------------------------------------------------------------------
+  # Powers Section III-A (HPG Models) and Eq. 5 (r_cycle Tarjan/Haeupler SCC)
+  - networkx=3.3
+
+  # Powers Section III-B (Eq. 8 Central Limit Theorem) & Statistical Testing
+  - numpy=1.26.4
+  - scipy=1.13.1
+  - pandas=2.2.2
+
+  # Configuration & Serialization (Section IV-B)
+  - pyyaml=6.0.1
+  - pydantic=2.7.4
+
+  # Evaluation Visualization & Chart Generation (Section V, Figures 3 & 4)
+  - matplotlib-base=3.8.4
+  - seaborn=0.13.2
+
+  # ----------------------------------------------------------------------------
+  # 3. Code Analysis, Static Metrics & Multi-Agent Ecosystem (PyPI Packages)
+  # ----------------------------------------------------------------------------
+  - pip:
+      # Static Code Complexity (Section III-B & Eq. 7 McCabe/LOC Metrics)
+      - radon==6.0.1
+
+      # Pure-Python Java AST Grammar Parser (Zero-Compiler Fallback)
+      - javalang==0.13.0
+
+      # Polyglot Syntax Tree Parsers for SWE-bench-Live & AIDev Datasets
+      - tree-sitter==0.21.3
+      - tree-sitter-python==0.21.0
+      - tree-sitter-java==0.21.0
+
+      # Foundation Model APIs (Section IV-C & Pinned GPT-4o Snapshots)
+      - openai==1.35.3
+      - anthropic==0.29.0
+
+      # Fast Token Accounting & Context Length Guard (RQ2 Wasted Tokens)
+      - tiktoken==0.7.0
+
+      # Automated Artifact Verification & Test Harnesses
+      - pytest==8.2.2
+      - pytest-mock==3.14.0
+      - pytest-cov==5.0.0

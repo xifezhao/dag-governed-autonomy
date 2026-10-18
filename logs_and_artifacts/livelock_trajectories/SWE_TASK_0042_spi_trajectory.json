@@ -1,0 +1,11 @@
+{
+  "task_id": "SWE_TASK_0042",
+  "isolated_agent": "agent_osc",
+  "detected_at_iteration": 3,
+  "fingerprint_trajectory": [
+    "920edf8fa120",
+    "376692c21d85",
+    "920edf8fa120"
+  ],
+  "solo_rerun_converged": true
+}
